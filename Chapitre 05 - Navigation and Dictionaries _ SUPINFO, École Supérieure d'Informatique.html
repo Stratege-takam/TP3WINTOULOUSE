@@ -1,0 +1,1469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0075)https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries -->
+<html itemscope="" itemtype="http://schema.org/WebSite" pref:renderer="css"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/site.css" type="text/css" rel="stylesheet">
+<link href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/site_menumap.css" type="text/css" rel="stylesheet">
+<link rel="icon" type="image/png" href="https://www.supinfo.com/favicon.png">
+
+<meta name="ROBOTS" content="INDEX,FOLLOW ALL">
+<meta name="resource-type" content="document">
+<meta name="viewport" content="width=device-width">
+<meta name="google-site-verification" content="9IYGwcea8yL5I4j-p49VY0YHrRox0mf0_ZQC97YFfgY">
+<meta name="msvalidate.01" content="FD9D49466E075099E68E374696D57591">
+<link rel="stylesheet" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/jquery-ui-1.8.21.custom.css" type="text/css" media="all">
+<title>Chapitre 05 - Navigation and Dictionaries | SUPINFO, École Supérieure d'Informatique</title>
+<meta name="identifier-url" content="https://www.supinfo.com">
+<meta http-equiv="content-language" content="fr">
+<meta name="author" content="SUPINFO - Ecole Informatique - Formation en Informatique - Paris, Lyon, Strasbourg, Bordeaux, Toulouse, Nantes, Nice, Montpellier, Marseille, Grenoble, Macon, Lille, Valenciennes, Caen, Rennes, Tours, Orléans, Troyes, Reims, Metz, Clermont-Ferrand,...">
+<meta name="copyright" content="supinfo.com">
+<meta name="keywords" content="ecole informatique">
+<link rel="stylesheet" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/cours.css" media="all" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/docbook.css">
+<link rel="stylesheet" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/patch.css">
+<link rel="stylesheet" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/monokai_sublime.css">
+<style>
+	.chapter-link-previous, .chapter-link-next { position: absolute; top: 6px; }
+	.chapter-link-previous { left: 10px; }
+	.chapter-link-next { right: 10px; }
+	</style>
+<script async="" charset="utf-8" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/saved_resource" type="text/javascript"></script><script type="text/javascript" async="" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/MathJax.js.download">
+</script>
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+  showMathMenu: false, showMathMenuMSIE: false,
+});
+</script>
+<script src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/jquery-1.7.2.min.js.download" type="text/javascript"></script>
+<script src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/jquery-ui-1.8.21.custom.min.js.download" type="text/javascript"></script>
+<link rel="stylesheet" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/jquery-ui-1.8.21.custom.css" type="text/css" media="all">
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?7dtvU9eSukTHjiUmVDgDDFWF374lPo4x';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style><link rel="stylesheet" type="text/css" href="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/css-topbar.css"><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div><div class="zopim" __jx__id="___$_67 ___$_67" data-test-id="ChatWidgetButton" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 190px; height: 30px; right: 10px; bottom: 0px; display: none;"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/saved_resource.html" data-test-id="ChatWidgetButton-iframe"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" data-test-id="ChatWidgetWindow" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; width: 290px; height: 400px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/saved_resource(1).html" data-test-id="ChatWidgetWindow-iframe"></iframe></div>
+<form name="frmMain" method="post" action="https://www.supinfo.com/frmMain.aspx?Culture=fr" id="frmMain">
+<script src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/js-topbar.js.download"></script>
+<div align="center">
+<table cellspacing="0" cellpadding="0" width="962" border="0">
+<tbody><tr>
+<td colspan="3">
+<table class="header_top" cellspacing="0" cellpadding="0" width="962" border="0">
+<tbody><tr>
+<td rowspan="2" class="topHeader" width="220">
+<a id="ctl00_lnkWebSiteRoot" href="https://www.supinfo.com/fr/Default.aspx">
+<img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/SupInfoLogo.png" id="ctl00_imgSupinfoLogo" title="Ecole informatique SUPINFO" alt="Ecole informatique - SUPINFO" border="0">
+</a>
+</td>
+<td rowspan="2" class="topHeader" width="512" align="center" valign="middle">
+</td>
+<td class="topFlags" align="center" width="230">
+<table border="0">
+<tbody><tr>
+<td><a id="ctl00_lnkMenuMap" title="Plan du site" class="topMenuMap" href="https://www.supinfo.com/cours/3WIN/chapitres/fr/Map.aspx">Plan du site</a>
+<span id="ctl00_spnFlags" class="topFlagSeparator"> &nbsp;</span>
+</td>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td align="right"><a href="https://www.supinfo.com/fr/Default.aspx"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/Flag-fr.gif" alt="français" style="border-width:0px;"></a><span class="topFlagSeparator">&nbsp;&nbsp;</span><a href="https://www.supinfo.com/en/Default.aspx"><img onmouseover="src = &#39;https://www.supinfo.com/images/common/Flag-en.gif&#39;" onmouseout="src = &#39;https://www.supinfo.com/images/common/FlagOff-en.gif&#39;" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/FlagOff-en.gif" alt="English" style="border-width:0px;"></a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<div id="lien-rapide-oc" style="position: absolute;top: 0px; right: -92px;"><a href="http://www.campus-booster.net/" target="_blank">
+Accéder à Open-Campus </a></div>
+</td>
+</tr>
+<tr>
+<td class="topHeader" height="57" align="left" width="190">
+<img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/logo-top-sos@x2.png" class="logo-sos" style="margin-top: 13px;">
+</td>
+</tr>
+<tr>
+<td colspan="3" height="8px;" style="background:url(&#39;https://www.supinfo.com/Images/Common/Trame_up.png&#39;) repeat-x 0px 0px;">
+<img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/Pixel.gif" border="0" alt="pixel">
+</td>
+</tr>
+</tbody></table>
+<table cellspacing="0" cellpadding="0" width="962" border="0">
+<tbody><tr>
+<td class="topMenuLeft">
+<span id="ctl00_lblTopMenu">
+<ul>
+<li>
+<a class="linka" href="https://www.supinfo.com/fr/Default.aspx">Accueil</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/Cursus/">Cursus</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/cours/">Cours</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/Admission/">Admissions</a>
+</li>
+<li onmouseover="showcampus();" onmouseout="hidecampus()">
+<a class="linka" href="https://www.supinfo.com/campus/">Campus</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/brochure/">Documentation</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/anciens/">Anciens</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/entreprise/">Entreprises</a>
+</li>
+<li>
+<a class="linka" href="http://www.campus-booster.net/Booster/v2/" target="_blank">Open Campus</a>
+</li>
+<li>
+<a class="linka" href="https://www.supinfo.com/articles/">Publications</a>
+</li>
+</ul>
+</span>
+</td>
+<td class="topMenuRight" align="right">
+<input name="ctl00$txtSearch" type="text" id="ctl00_txtSearch" class="Search" onkeypress="if (window.event.keyCode == 13)  { document.all[&#39;ctl00_btnSearch&#39;].click(); return false; } else  return true;">
+<a onclick="window.location=&#39;https://supinfo.com/fr/Search.aspx?&#39; + document.querySelector(&#39;#ctl00_txtSearch&#39;).value;" id="ctl00_btnSearch" class="SearchButton"></a>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="topLineSeparator">
+<img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/Pixel.gif" border="0" alt="pixel">
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td width="962" bgcolor="white" style="border-bottom: none 0px White;">
+<table border="0" cellspacing="0" cellpadding="0" width="962" class="tableNews page-base">
+<tbody><tr>
+<td valign="top" width="100%">
+<table id="ctl00_ctl01_tblPageContent" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody><tr>
+<td id="ctl00_ctl01_tdNewsTitle" class="tdNews-MOOC" valign="bottom" style="background:url(&#39;https://www.supinfo.com/SupinfoCommonResources/SUPINFO-MOOCS/titles/2WEB.jpg&#39;) no-repeat 0px 0px" height="125">
+<h1 style="font-weight:bold; font-size: 16px; font-family:Verdana; color: Black; text-align: right; margin-top:10px; margin-right:10px;">
+<span id="ctl00_ctl01_lblPageTitle">Articles - Étudiants SUPINFO</span>
+</h1>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px; padding-right: 15px;" valign="top">
+<div>
+<span id="ctl00_ctl01_lblIntroduction"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px; padding-right: 5px; padding-bottom: 20px;" valign="top">
+<span id="ctl00_ctl01_lblContent">
+<style type="text/css">
+                                                        @import "https://www.supinfo.com/SupinfoCommonResources/SUPINFO-CSS/css-base.css";
+                                                        @import "https://www.supinfo.com/SupinfoCommonResources/SUPINFO-CSS/css-doc0-2015.css";
+                                                    </style>
+<div style="background-image:url(&#39;https://supinfo.com/SupinfoCommonResources/SUPINFO-PICTURES/moocs/covers/cover-8.jpg&#39;); height:150px; background-size: cover; border-radius:0px 0px 4px 4px;">
+</div>
+<div class="page-base" id="courseDocZero">
+<div id="courseHeader">
+<h1>Chapitre 05 - Navigation and Dictionaries</h1>
+<div id="courseMetas">
+<span>
+<a class="chapter-link-previous" href="https://www.supinfo.com/cours/3WIN/chapitres/04-articlesapp-project">
+Précédent
+</a>
+<a href="https://www.supinfo.com/cours/3WIN">Microsoft Windows Universal Applications Development</a>
+<a class="chapter-link-next" href="https://www.supinfo.com/cours/3WIN/chapitres/06-user-controls">
+Suivant
+</a>
+</span>
+</div>
+<div class="clr"></div>
+</div>
+<div class="space"></div>
+<div class="courseArea" id="header">
+<div class="course-md-6" id="author-infos">
+<span class="macaron"><object data="http://www.campus-booster.net/actorpictures/75279.jpg"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/macaron-anonyme.png"></object></span><h1>Florent COLLOT</h1>
+<p></p>
+<p>Professeur Référent à SUPINFO International University</p>
+</div>
+<nav class="course-md-4" id="cartouche"><ul class="nav campus-nav" id="cartouche-cours">
+<div id="cartouche-tete" style="text-align: center; padding: 0px 0px;"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/icone-page-financement@x2.png" width="375px"></div>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191537936">Introduction</a></span></li>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191535472">Navigation au sein d'une application</a></span></li>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191450880">Etape 3 : Visualisation des articles</a></span></li>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191404288">Dictionnaire de Ressources</a></span></li>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191363600">Bouton Retour</a></span></li>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191349904">Police Segoe MDL2 Assets</a></span></li>
+<li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702173214752">Etape 4 : Présentation des articles</a></span></li>
+</ul></nav>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702191537936"></a>Introduction</h2></div></div></div>
+<p>Après avoir réalisé la récupération de contenus externes et rendu
+leur affichage dans notre application, nous allons détailler par l'exemple
+deux nouvelles possibilités de la plateforme UWP. Au travers de ce
+chapitre, nous allons nous intéresser à la navigation et l'entrelacement
+des pages (d'un point de vue ergonomique comme programmatique) ainsi
+qu'aux dictionnaires de ressources permettant de centraliser un ensemble
+de propriétés et les rendre accessibles dans plusieurs pages.</p>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702191535472"></a>Navigation au sein d'une application</h2></div></div></div>
+<p>Une navigation aisée est un élément important de l'expérience
+utilisateur et suppose plusieurs éléments :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Une structure efficace de liens entre les pages, formant ainsi
+une hiérarchie claire entre les différentes parties de
+l'application.</p></li>
+<li class="listitem"><p>Des éléments visuels de mise en page ergonomiques et connus,
+pour dissiper toute interrogation de l'utilisateur quant aux
+possibilités de l'application.</p></li>
+<li class="listitem"><p>Des éléments contextuels dans l'application comme des boutons ou
+des liens.</p></li>
+</ul></div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idm44702191524832"></a>Structurer son application</h3></div></div></div>
+<p>Quand l'utilisateur affiche la page principale de votre
+application, nous offrons en tant que concepteurs de celle-ci des
+possibilités de naviguer vers différentes pages. Par itération, on peut
+construire l'arbre de hiérarchie des pages, qui doit rester aussi simple
+que possible et éviter au maximum les redondances.</p>
+<p>On représente la navigation au sein de l'application comme un
+arbre enraciné, une structure mathématique composée de différents noeuds
+(ici, nos pages), reliés par des arêtes (ici, nos possibilités de
+navigation) et où toutes les arêtes se rejoignent en un point (ici, le
+point d'entrée de notre application).</p>
+<div class="figure">
+<a name="idm44702191519856"></a><p class="title"><b>Figure&nbsp;1.1.&nbsp;Exemple de hiérarchie de navigation dans une
+application</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-nav-hierarchy.png" width="535" alt="Exemple de hiérarchie de navigation dans une application"></div></div>
+</div>
+<br class="figure-break"><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top"><p>La structure mathématique de l'arbre décrite plus haut ne doit
+pas posséder de cycle. Dans notre figure ci-dessus, il est très
+déconseillé de relier par exemple la page 2A et la page 2C1.</p></td></tr>
+</tbody></table></div>
+<p>On peut décompter deux catégories de navigation dans notre exemple
+ci-dessus : la navigation par pairs, dans notre cas les liaisons
+horizontales, et la navigation</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>La navigation par pairs : Liant entre elles plusieurs pages,
+l'utilisateur peut passer d'une page à une autre dans n'importe quel
+ordre. On peut l'utiliser pour souligner les différentes
+fonctionnalités d'une application ou pour créer des catégories. Dans
+notre schéma, ce sont les liaisons horizontales.</p></li>
+<li class="listitem"><p>La navigation par hiérarchie : Chaque page possède un seul et
+unique parent, mais une page peut avoir plusieurs enfants. Pour
+naviguer sur une page, il est nécessaire de naviguer par son parent.
+On peut l'utiliser par exemple pour afficher des détails sur un
+élément, la page parente étant une vue d'ensemble et ses enfants
+directs des vues plus précises. Dans notre schéma, ce sont les
+liaisons verticales.</p></li>
+</ul></div>
+<p>Une application devra combiner les deux types de navigations selon
+les besoins et c'est une étape préliminaire nécessaire pour offrir une
+expérience optimale.</p>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idm44702191505264"></a>Eléments visuels</h3></div></div></div>
+<p>Si nous avons déjà pu voir plusieurs contrôles de mise en page
+dans les chapitres précédents, les contrôles qui vont suivre sont
+spécialement dédiés à la navigation.</p>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="idm44702191503696"></a>Pivot et PivotItem</h4></div></div></div>
+<p>Dédié à la navigation par pairs, l'élément Pivot se constitue de
+plusieurs éléments PivotItem, chacun représentant une vue de
+l'application.</p>
+<p>Un contrôle PivotItem peut posséder l'attribut "Header" pour
+définir un simple texte. Si vous souhaitez réaliser des constructions
+plus compliquées, il est possible d'ajouter la balise PivotItem.Header
+prévue à cet effet.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Page</span>&gt;</span> <span class="hljs-comment">&lt;!-- Attributs omis pour la lisibilité --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Pivot</span> <span class="hljs-attribute">Background</span>=<span class="hljs-value">"White"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">PivotItem</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">PivotItem.Header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">StackPanel</span> <span class="hljs-attribute">Orientation</span>=<span class="hljs-value">"Horizontal"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Categorie<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>A<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">StackPanel</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">PivotItem.Header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Contenu 1<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">PivotItem</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">PivotItem</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">PivotItem.Header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">StackPanel</span> <span class="hljs-attribute">Orientation</span>=<span class="hljs-value">"Horizontal"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Categorie<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>B<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">StackPanel</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">PivotItem.Header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Contenu 2<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">PivotItem</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Pivot</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Page</span>&gt;</span></pre>
+<div class="figure">
+<a name="idm44702191501072"></a><p class="title"><b>Figure&nbsp;1.2.&nbsp;Rendu visuel d'un élément Pivot</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-pivot.png" width="535" alt="Rendu visuel d&#39;un élément Pivot"></div></div>
+</div>
+<br class="figure-break"><p>Au clic sur un des en-têtes ou en faisant glisser le contenu
+vers la gauche, la navigation se fait en déclenchant une animation
+sobre soulignant la navigation.</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top"><p>L'élément Pivot a un point commun avec ListView et GridView :
+ils héritent tous trois de l'élément de base ItemsControl.</p></td></tr>
+</tbody></table></div>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="idm44702191496784"></a>Hub</h4></div></div></div>
+<div class="figure">
+<a name="idm44702191495840"></a><p class="title"><b>Figure&nbsp;1.3.&nbsp;Architecture d'un Hub (Source: docs.microsoft.com)</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-hub-example.png" width="535" alt="Architecture d&#39;un Hub (Source: docs.microsoft.com)"></div></div>
+</div>
+<br class="figure-break"><p>A l'inverse du Pivot se comportant comme des onglets et
+focalisant l'attention de l'utilisateur sur celui qu'il visite, le Hub
+est prévu pour explorer le contenu horizontalement. Tout l'enjeu de ce
+contrôle est d'afficher une section tout en laissant apparaître une
+portion de la section suivante pour inviter l'utilisateur à parcourir
+l'application.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Hub</span> <span class="hljs-attribute">Header</span>=<span class="hljs-value">"Mon application"</span> <span class="hljs-attribute">Background</span>=<span class="hljs-value">"White"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">HubSection</span> <span class="hljs-attribute">Header</span>=<span class="hljs-value">"Liste d'articles"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">DataTemplate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">ItemsSource</span>=<span class="hljs-value">"{Binding Articles}"</span> <span class="hljs-attribute">Width</span>=<span class="hljs-value">"300"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">DataTemplate</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">Text</span>=<span class="hljs-value">"{Binding Title}"</span> <span class="hljs-attribute">TextWrapping</span>=<span class="hljs-value">"Wrap"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">DataTemplate</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ListView</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">DataTemplate</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">HubSection</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">HubSection</span> <span class="hljs-attribute">Header</span>=<span class="hljs-value">"A propos"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">DataTemplate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">DataTemplate</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">HubSection</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Hub</span>&gt;</span></pre>
+<div class="figure">
+<a name="idm44702191491120"></a><p class="title"><b>Figure&nbsp;1.4.&nbsp;Rendu d'un Hub</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-hub.png" width="535" alt="Rendu d&#39;un Hub"></div></div>
+</div>
+<br class="figure-break"><p>Le contrôle Hub propose une grande flexibilité, car il est
+possible de définir des tailles différentes à chaque contrôle
+HubSection, présentant des éléments complètement différents avec une
+mise en page adaptée à chaque partie de votre application. Les
+différents éléments HubSection peuvent aussi s'agencer verticalement
+sur de plus petits équipements comme les smartphones.</p>
+<p>Si le rapport avec le contrôle Pivot peut être fait dans le code
+XAML, le Hub suggère et incite à l'exploration quand le Pivot offre
+une claire séparation de ses éléments. Le Hub est non-exhaustif et
+peut s'assimiler à une converture de magazine, quand le Pivot est
+exaustif et rappelle les onglets. Entre ces deux possibilités, le
+choix se fera en fonction de l'expérience que vous voulez offrir à vos
+utilisateurs.</p>
+<div class="figure">
+<a name="idm44702191487168"></a><p class="title"><b>Figure&nbsp;1.5.&nbsp;Exemple de Hub (Source : msdn.microsoft.com)</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-hub-example-2.png" width="535" alt="Exemple de Hub (Source : msdn.microsoft.com)"></div></div>
+</div>
+<br class="figure-break">
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="idm44702191484416"></a>SplitView</h4></div></div></div>
+<p>Le contrôle SplitView est utilisé pour faire un panneau de
+navigation rétractable ou non, survolant ou non le contenu en cas
+d'ouverture.</p>
+<div class="figure">
+<a name="idm44702191483056"></a><p class="title"><b>Figure&nbsp;1.6.&nbsp;Exemple de SplitView (Source: docs.microsoft.com)</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-splitview.png" width="535" alt="Exemple de SplitView (Source: docs.microsoft.com)"></div></div>
+</div>
+<br class="figure-break"><pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Page</span>&gt;</span> <span class="hljs-comment">&lt;!-- Attributs omis pour la lisibilité --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">SplitView</span> <span class="hljs-attribute">IsPaneOpen</span>=<span class="hljs-value">"False"</span> <span class="hljs-attribute">CompactPaneLength</span>=<span class="hljs-value">"40"</span> <span class="hljs-attribute">OpenPaneLength</span>=<span class="hljs-value">"200"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">SplitView.Pane</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Panneau de navigation<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">SplitView.Pane</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">SplitView.Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span>&gt;</span>Contenu principal de la page<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">SplitView.Content</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">SplitView</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Page</span>&gt;</span></pre>
+<p>On remarque plusieurs attributs dans cet exemple :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>IsPaneOpen : Attribut définissant l'état initial du panneau
+de navigation. S'il est vrai, le panneau sera ouvert par défaut à
+l'affichage de la page. C'est également l'attribut à modifier si
+l'on souhaite implémenter un bouton agissant sur l'ouverture ou la
+fermeture du panneau, dans le cas d'un menu "burger" (☰) par
+exemple.</p></li>
+<li class="listitem"><p>CompactPaneLength : La largeur du panneau quand il est
+rétracté.</p></li>
+<li class="listitem"><p>OpenPaneLength : La largeur du panneau quand il est
+étendu.</p></li>
+</ul></div>
+<p>Ce contrôle dispose de plusieurs comportements, définissable par
+l'attribut DisplayMode :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Overlay : Le panneau est par défaut caché. Quand le panneau
+est ouvert, il passe au-dessus du contenu.</p></li>
+<li class="listitem"><p>Inline : Le panneau est toujours ouvert et est côte-à-côté
+avec le contenu.</p></li>
+<li class="listitem"><p>CompactOverlay : Le panneau est toujours visible, avec une
+taille définie par l'attribut CompactPaneLength (par défaut 48).
+Quand le panneau est ouvert, il passe au-dessus du contenu.</p></li>
+<li class="listitem"><p>CompactInline : Le panneau est toujours visible, avec une
+taille définie par l'attribut CompactPaneLength (par défaut 48).
+Quand le panneau est ouvert, il réduit la place allouée au
+contenu.</p></li>
+</ul></div>
+<p>Enfin, il est possible d'utiliser l'attribut PanePlacement pour
+définir si le panneau est à gauche ou à droite du contenu. Il est
+positionné par défaut à gauche.</p>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="idm44702191469440"></a>CommandBar</h4></div></div></div>
+<p>Un contrôle CommandBar permet d'afficher à n'importe quel
+endroit d'une page une zone horizontale de contrôles, majoritairement
+des boutons. Cette barre peut être utilisée pour offrir des commandes
+spécifiques à un contrôle : on peut prendre l'exemple d'un lecteur
+média au sein d'une application avec une barre de commandes dédiée à
+la lecture (Play, Pause, Stop, ...). Il est également possible de
+placer cette barre de commande en bas d'une page, en utilisant la
+balise Page.BottomAppBar.</p>
+<p>Une barre de commande est constituée de trois zones :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Content : Optionnelle, elle place les commandes à gauche de
+la barre. Il est possible de positionner d'autres éléments comme
+un TextBlock pour afficher une information.</p></li>
+<li class="listitem"><p>PrimaryCommands : Zone utilisée par défaut si non précisé.
+Elle place les commandes à droite. Chaque commande supplémentaire
+sera affichée à gauche de la précédente.</p></li>
+<li class="listitem"><p>SecondaryCommands : Optionnelle, elle fait apparaître
+l'ellipse à droite de la barre. Au clic sur cette ellipse, ces
+commandes sont affichées sans icône. C'est également dans cette
+zone que se retrouveront les commandes primaires si l'équipement
+n'a pas une largeur suffisante pour tous les afficher.</p></li>
+</ul></div>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Page</span>&gt;</span> <span class="hljs-comment">&lt;!-- Attributs omis pour la lisibilité --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Grid</span> <span class="hljs-attribute">Background</span>=<span class="hljs-value">"White"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">ItemsSource</span>=<span class="hljs-value">"{Binding Articles}"</span> <span class="hljs-attribute">Width</span>=<span class="hljs-value">"300"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">DataTemplate</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">Text</span>=<span class="hljs-value">"{Binding Title}"</span> <span class="hljs-attribute">TextWrapping</span>=<span class="hljs-value">"Wrap"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">DataTemplate</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ListView</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Grid</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Page.BottomAppBar</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">CommandBar</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">CommandBar.Content</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">Margin</span>=<span class="hljs-value">"10"</span>&gt;</span>Statut : En cours<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">CommandBar.Content</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">AppBarButton</span> <span class="hljs-attribute">Icon</span>=<span class="hljs-value">"Folder"</span> <span class="hljs-attribute">Label</span>=<span class="hljs-value">"Parcourir"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">AppBarButton</span> <span class="hljs-attribute">Icon</span>=<span class="hljs-value">"RepeatAll"</span> <span class="hljs-attribute">Label</span>=<span class="hljs-value">"Rafraîchir"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">AppBarButton</span> <span class="hljs-attribute">Icon</span>=<span class="hljs-value">"Add"</span> <span class="hljs-attribute">Label</span>=<span class="hljs-value">"Ajouter"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">CommandBar.SecondaryCommands</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AppBarButton</span> <span class="hljs-attribute">Label</span>=<span class="hljs-value">"A propos"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">AppBarButton</span> <span class="hljs-attribute">Label</span>=<span class="hljs-value">"Paramètres"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">CommandBar.SecondaryCommands</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">CommandBar</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Page.BottomAppBar</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Page</span>&gt;</span></pre>
+<div class="figure">
+<a name="idm44702191462512"></a><p class="title"><b>Figure&nbsp;1.7.&nbsp;Rendu de l'exemple précédent</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-commandbar.png" width="535" alt="Rendu de l&#39;exemple précédent"></div></div>
+</div>
+<br class="figure-break">
+</div>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idm44702191459504"></a>Navigation par code-behind</h3></div></div></div>
+<p>La navigation par code-behind consiste à rediriger l'utilisateur
+vers une autre page dans le cadre d'un événement. Quand il clique sur un
+bouton ou un lien, un élément de liste ou fait une action avec tout
+autre contrôle, il est possible de le rediriger
+programmatiquement.</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top"><p>Dans le cas d'une balise HyperlinkButton, il est possible de
+définir l'attribut NavigateUri pour rediriger l'utilisateur sans aucun
+code-behind.</p></td></tr>
+</tbody></table></div>
+<p>La syntaxe de cet appel est décrit dans l'exemple ci-dessous
+:</p>
+<pre class="programlisting cs hljs"><span class="hljs-comment">// Exemple d'événement déclenché au clic sur un bouton d'un élément CommandBar</span>
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">AppBarButton_Click</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, RoutedEventArgs e</span>)
+</span>{
+  <span class="hljs-comment">// En considérant que la page ciblée soit appelée "DeuxiemePage.xaml"</span>
+  Frame.Navigate(<span class="hljs-keyword">typeof</span>(DeuxiemePage));
+}</pre>
+<p>Il est également possible de passer un argument à la page ciblée,
+par le second argument de Frame.Navigate. Cet argument sera très utile
+pour contextualiser la navigation de l'utilisateur. En prenant l'exemple
+de notre liste d'articles, en considérant que si l'utilisateur clique
+sur un élément de la liste, il soit redirigé vers une page de
+visualisation de ce même article, il nous faudra envoyer à notre
+deuxième page l'article en question.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Grid</span> <span class="hljs-attribute">Background</span>=<span class="hljs-value">"White"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Notez les attributs suivants :
+       - ItemClick : Evénement. Méthode à appeler au Click.
+       - IsItemClickEnabled : Confirme l'interactivité des éléments.
+  --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">ItemsSource</span>=<span class="hljs-value">"{Binding Articles}"</span> <span class="hljs-attribute">ItemClick</span>=<span class="hljs-value">"ListView_ItemClick"</span> 
+            <span class="hljs-attribute">IsItemClickEnabled</span>=<span class="hljs-value">"True"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">DataTemplate</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">Text</span>=<span class="hljs-value">"{Binding Title}"</span> <span class="hljs-attribute">TextWrapping</span>=<span class="hljs-value">"Wrap"</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">DataTemplate</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ListView</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Grid</span>&gt;</span></pre>
+<pre class="programlisting cs hljs"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">ListView_ItemClick</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, ItemClickEventArgs e</span>)
+</span>{
+  <span class="hljs-comment">// On récupère l'article grâce à la propriété ClickedItem de l'objet ItemClickEventArgs</span>
+  Article a = e.ClickedItem <span class="hljs-keyword">as</span> Article;
+  <span class="hljs-comment">// On redirige l'utilisateur vers la page DeuxiemePage en transférant également l'article</span>
+  Frame.Navigate(<span class="hljs-keyword">typeof</span>(DeuxiemePage), a);
+}</pre>
+<p>Pour récupérer l'article dans la deuxième page, il suffit de
+surcharger la méthode OnNavigatedTo. Pour cela, après avoir écrit
+"protected override" dans le code-behind de la deuxième page,
+IntelliSense nous la propose parmi de nombreuses autres méthodes. Après
+génération, il ne nous reste plus qu'à récupérer l'article en tant que
+paramètre de la navigation :</p>
+<pre class="programlisting cs hljs"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnNavigatedTo</span>(<span class="hljs-params">NavigationEventArgs e</span>)
+</span>{
+  <span class="hljs-keyword">base</span>.OnNavigatedTo(e);
+  Article a = e.Parameter <span class="hljs-keyword">as</span> Article;
+}</pre>
+<p>Le deuxième argument de la méthode Frame.Navigate() étant de type
+object, il est possible de transférer une structure plus complexe, comme
+une liste d'objets ou un objet construit de toutes pièces contenant de
+nombreuses propriétés.</p>
+</div>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702191450880"></a>Etape 3 : Visualisation des articles</h2></div></div></div>
+<p>Dans cette étape, nous allons réaliser la partie graphique de la
+visualisation d'articles.</p>
+<div class="answerkey">
+<h1>Exercice corrigé : Visualisation d'articles</h1>
+<div class="qandaset">
+<a name="idm44702191448624"></a><table border="0" style="width: 100%;">
+<colgroup>
+<col align="left" width="1%">
+<col>
+</colgroup>
+<tbody>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191447808"></a><a name="idm44702191447392"></a><p><b>1.1.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Pour commencer, téléchargez le document archivé disponible
+sur notre plateforme de contenus pédagogiques. Cette archive
+contient deux fichiers, DataProviders.cs et
+3WIN_Helpers.cs.</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>DataProviders.cs contient deux classes statiques
+fournissant l'ensemble des catégories et des groupes pour
+notre application. Ces classes nous permettront de renforcer
+notre classe RssReader et contient les couleurs et icônes
+utilisées pour l'affichage des vignettes.</p></li>
+<li class="listitem"><p>3WIN_Helpers.cs contient comme son nom l'indique des
+méthodes utilitaires dont nous nous servirons pour ce
+projet.</p></li>
+</ul></div>
+<p>Ajoutez un constructeur dans la classe Group prenant en
+paramètre l'id (int), le nom (string), l'icône (char) et la
+couleur (string). Ajoutez une propriété Icon (string) et une
+propriété Color (SolidColorBrush). Utilisez la méthode
+_3WIN_Color_Helper.GetBytesFromHex pour initialiser les bonnes
+valeurs grâce au constructeur.</p>
+<p>Ajoutez un constructeur dans la classe Category prenant en
+paramètre l'id (int), le nom (string) et l'id du groupe duquel
+elle dépend (int). Utilisez ces valeurs pour construire votre
+objet.</p>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191439888"></a><a name="idm44702191439568"></a><p><b>1.2.</b></p>
+</td>
+<td align="left" valign="top"><p>Modifiez la méthode Start de la classe RssReader. Au lieu
+d'utiliser une boucle de 1 au nombre de catégories, utilisez la
+classe CategoryProvider.</p></td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191436896"></a><a name="idm44702191436576"></a><p><b>1.3.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Créez une nouvelle page ReadPage. Puis, dans la page
+principale, ajoutez un événement au clic sur un élément de la
+liste. Au clic, l'utilisateur devra naviguer vers ReadPage,
+l'article cliqué étant passé en paramètre de navigation.</p>
+<p>Ajouter le code suivant dans la classe Article :</p>
+<pre class="programlisting cs hljs"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> CONTENT_URI = 
+    <span class="hljs-string">"https://www.supinfo.com/api/supinfo?action=content&amp;articleId="</span>;
+<span class="hljs-keyword">public</span> Uri DecoratedUri { <span class="hljs-keyword">get</span> { <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Uri(CONTENT_URI + Id); } }</pre>
+<p>La propriété DecoratedUri permet d'afficher le contenu
+d'un article au format HTML.</p>
+<p>Dans ReadPage, utilisez un contrôle WebView et
+définissez-lui en propriété Source notre nouvelle propriété
+Article.DecoratedUri.</p>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191428176"></a><a name="idm44702191427856"></a><p><b>1.4.</b></p>
+</td>
+<td align="left" valign="top"><p>Dans ReadPage, affichez le titre de l'article au dessus du
+contrôle WebView. Ce texte devrait être présenté par un texte de
+taille 28 et ne pas être collé au contrôle WebView. Il existe
+plusieurs solutions concernant le XAML.</p></td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191425040"></a><a name="idm44702191424720"></a><p><b>1.5.</b></p>
+</td>
+<td align="left" valign="top"><p>Ajoutez une barre de commande dans la page ReadPage avec
+un nouvel élément ayant comme icône World et le texte "Lire sur
+site". Au clic sur cet élément, le navigateur de l'utilisateur
+doit s'ouvrir avec comme adresse l'attribut Link de notre
+Article. Utilisez pour ceci la méthode
+_3WIN_HttpHelper.WebLaunch.</p></td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191421280"></a><a name="idm44702191420960"></a><p><b>1.6.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Ajouter dans la page MainPage une barre de commande avec
+un nouvel élément ayant comme icône RepeatAll et le texte
+"Rafraîchir". Au clic sur cet élément, l'ensemble de la
+procédure de récupération d'articles doit se faire. Pour ceci,
+implémentez une méthode Reset dans la classe RssReader, qui vide
+la liste d'objets RssElement et qui appelle la méthode
+Start.</p>
+<p>Enfin, quand l'événement LoadCompleted est déclenché,
+videz dans la page MainPage la liste des articles avant de la
+populer de nouveau.</p>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191414896"></a><a name="idm44702191414576"></a><p><b>1.7.</b></p>
+</td>
+<td align="left" valign="top"><p>Modifiez l'affichage de la liste d'articles. Indiquez une
+bordure grise d'un pixel (uniquement sur la bordure basse). Pour
+ceci, utilisez la balise ListView.ItemContainerStyle.</p></td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702191411984"></a><a name="idm44702191411664"></a><p><b>1.8.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Créez une nouvelle propriété DateLabel de type string dans
+la classe Article. Surchargez l'accesseur (get).</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Si l'écart entre la date de publication de l'article
+et de la date actuelle est supérieure à 99 jours, retournez
+"99+j"</p></li>
+<li class="listitem"><p>Si cet écart est supérieur à 1 jour, retournez ce
+nombre de jours suivi de la lettre "j".</p></li>
+<li class="listitem"><p>Si cet écart est supérieur à 1 heure, retournez ce
+nombre d'heures suivi de la lettre "h".</p></li>
+<li class="listitem"><p>Si cet écart est inférieur ou égal à 1 heure,
+retournez le caractère "!".</p></li>
+</ul></div>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702191404288"></a>Dictionnaire de Ressources</h2></div></div></div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idm44702191403504"></a>Créer soi-même des ressources</h3></div></div></div>
+<p>Avec plusieurs pages se pose la question de la cohérence des
+interfaces au sein de l'ensemble de l'application. En effet, il est
+conseillé de respecter une charte graphique commune tout au long de
+l'utilisation de l'application. Cette charte graphique peut se présenter
+de différentes manières, mais inclus entre autres des dimensions, des
+tailles et styles de police, des couleurs.</p>
+<p>Il n'est pas souhaitable de dupliquer les styles des éléments dans
+toutes nos pages ; cela deviendrait fastidieux et difficile à maintenir.
+Pour cela, la plateforme UWP nous propose des styles sous forme XAML à
+appliquer sur nos éléments.</p>
+<p>Pour ce faire, nous utiliserons une balise
+RessourceDictionary.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Style</span> <span class="hljs-attribute">x:Name</span>=<span class="hljs-value">"ArticleTitle"</span> <span class="hljs-attribute">TargetType</span>=<span class="hljs-value">"TextBlock"</span>&gt;</span><span class="css">
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">Foreground</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Red</span>" /&gt;
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontSize</span>" <span class="hljs-tag">Value</span>="20" /&gt;
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontStyle</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Italic</span>" /&gt;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-title">Style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span></pre>
+<p>Dans notre exemple, on définit un style nommé ArticleTitle qui
+peut uniquement s'appliquer aux attributs TextBlock. Il est conseillé de
+définir cet attribut TargetType pour activer l'auto-complétion des
+propriétés et valeurs dans les balises Setter. Ces balises définissent
+une valeur à assigner à une propriété, ici une couleur de texte rouge,
+une taille de police de 20 et un style de texte en italique.</p>
+<p>Pour appliquer ces styles sur une balise, il suffit d'y définir
+l'attribut Style comme suit :</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Grid</span> <span class="hljs-attribute">Background</span>=<span class="hljs-value">"White"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ListView</span> <span class="hljs-attribute">ItemsSource</span>=<span class="hljs-value">"{Binding Articles}"</span> <span class="hljs-attribute">ItemClick</span>=<span class="hljs-value">"ListView_ItemClick"</span> 
+            <span class="hljs-attribute">IsItemClickEnabled</span>=<span class="hljs-value">"True"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">DataTemplate</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">Text</span>=<span class="hljs-value">"{Binding Title}"</span> <span class="hljs-attribute">TextWrapping</span>=<span class="hljs-value">"Wrap"</span> 
+                   <span class="hljs-attribute">Style</span>=<span class="hljs-value">"{StaticResource ArticleTitle}"</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">DataTemplate</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ListView.ItemTemplate</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ListView</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Grid</span>&gt;</span></pre>
+<div class="figure">
+<a name="idm44702191397792"></a><p class="title"><b>Figure&nbsp;1.8.&nbsp;Rendu de l'exemple précédent</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-dictionary.png" width="535" alt="Rendu de l&#39;exemple précédent"></div></div>
+</div>
+<br class="figure-break"><p>Ce dictionnaire de ressource peut être défini :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+<p>Dans le fichier App.xaml. Ces styles seront accessibles pour
+toute l'application et chargés au lacement de celle-ci. De fait, il
+est déconseillé de mettre trop d'éléments dans ce fichier car celui
+peut nuire à la rapidité de lancement de l'application. Exemple de
+dictionnaire dans App.xaml :</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Application</span>&gt;</span> <span class="hljs-comment">&lt;!-- Attributs omis pour la lisibilité --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Application.Resources</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- Placer les styles ici --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Application.Resources</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Application</span>&gt;</span></pre>
+</li>
+<li class="listitem">
+<p>Dans la page concernée. Dans ce cas, les styles ne sont
+applicables qu'à la page en cours. Le gain réside dans la
+maintenabilité, en appliquant à plusieurs éléments d'une même page
+un style défini une seule fois :</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Page</span>&gt;</span> <span class="hljs-comment">&lt;!-- Attributs omis pour la lisibilité --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Page.Resources</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">Style</span> <span class="hljs-attribute">x:Name</span>=<span class="hljs-value">"ArticleTitlePage"</span> <span class="hljs-attribute">TargetType</span>=<span class="hljs-value">"TextBlock"</span>&gt;</span><span class="css">
+        &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">Foreground</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Red</span>" /&gt;
+        &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontSize</span>" <span class="hljs-tag">Value</span>="20" /&gt;
+        &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontStyle</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Italic</span>" /&gt;
+      </span><span class="hljs-tag">&lt;/<span class="hljs-title">Style</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Page.Resources</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Grid</span> <span class="hljs-attribute">Background</span>=<span class="hljs-value">"White"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">Style</span>=<span class="hljs-value">"{StaticResource ArticleTitlePage}"</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-title">TextBlock</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">Grid</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">Page</span>&gt;</span></pre>
+</li>
+<li class="listitem">
+<p>Au sein d'un fichier dictionnaire de ressources. Il est
+possible et conseillé de séparer les styles au sein de différents
+fichiers pour mieux maintenir les styles, ceux-ci pouvant devenir
+très nombreux pour une application complète. Pour cela, il faudra
+créer un nouvel élément dans le projet et sélectionner "Dictionnaire
+de ressources" :</p>
+<pre class="programlisting xml hljs"><span class="hljs-comment">&lt;!-- Fichier Styles.xaml --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span>
+  <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
+  <span class="hljs-attribute">xmlns:x</span>=<span class="hljs-value">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+  <span class="hljs-attribute">xmlns:local</span>=<span class="hljs-value">"using:CourseApp"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">Style</span> <span class="hljs-attribute">x:Name</span>=<span class="hljs-value">"ArticleTitlePage"</span> <span class="hljs-attribute">TargetType</span>=<span class="hljs-value">"TextBlock"</span>&gt;</span><span class="css">
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">Foreground</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Red</span>" /&gt;
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontSize</span>" <span class="hljs-tag">Value</span>="20" /&gt;
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontStyle</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Italic</span>" /&gt;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-title">Style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span></pre>
+<p>L'inclusion de ce dictionnaire de ressources, qu'elle soit
+dans le fichier App.xaml ou dans une page, se déroule comme suit
+:</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span> <span class="hljs-attribute">Source</span>=<span class="hljs-value">"/Styles.xaml"</span> /&gt;</span></pre>
+</li>
+</ul></div>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top"><p>Beaucoup de contrôles comme Page peuvent intégrer une balise
+"Resources". Dans ce cas, la ou les ressources seront définies dans
+cette balise et non dans toute la page.</p></td></tr>
+</tbody></table></div>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top"><p>Si l'attribut "Name" d'un Style n'est pas défini, alors tous les
+contrôles ciblés par l'attribut TargetType utiliseront ce
+style.</p></td></tr>
+</tbody></table></div>
+<p>L'héritage est permis dans toutes les définitions de styles grâce
+à l'attribut BasedOn.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">Style</span> <span class="hljs-attribute">x:Name</span>=<span class="hljs-value">"StyleDeBase"</span> <span class="hljs-attribute">TargetType</span>=<span class="hljs-value">"TextBlock"</span>&gt;</span><span class="css">
+  &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">Foreground</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">White</span>" /&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">Style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">Style</span> <span class="hljs-attribute">x:Name</span>=<span class="hljs-value">"StyleEtendu"</span> <span class="hljs-attribute">TargetType</span>=<span class="hljs-value">"TextBlock"</span> 
+       <span class="hljs-attribute">BasedOn</span>=<span class="hljs-value">"{StaticResource StyleDeBase}"</span>&gt;</span><span class="css">
+  &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontSize</span>" <span class="hljs-tag">Value</span>="20" /&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">Style</span>&gt;</span></pre>
+<p>Dans l'exemple précédent, tous les éléments TextBlock utilisant le
+style StyleEtendu bénéficieront d'une couleur blanche et d'une taille de
+police de 20.</p>
+<p>Pour finir, il est possible de relier plusieurs dictionnaires de
+ressources différents dans une même page grâce à la balise
+ResourceDictionary.MergedDictionaries. Dans ce cas, les différents
+dictionnaires de ressources seront virtuellement concaténés pour inclure
+tous les styles nécessaires au bon fonctionnement.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary.MergedDictionaries</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span> <span class="hljs-attribute">Source</span>=<span class="hljs-value">"Dictionnaire1.xaml"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span> <span class="hljs-attribute">Source</span>=<span class="hljs-value">"Dictionnaire2.xaml"</span>/&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary.MergedDictionaries</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span></pre>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="idm44702191380864"></a>Ressources fournies par UWP</h3></div></div></div>
+<p>Pour offrir une expérience utilisateur similaire et efficace sur
+l'ensemble de la plateforme, Microsoft vous propose un ensemble de
+styles déjà présents façonnant Modern UI.</p>
+<p>Ces ressources peuvent se découper en trois catégories :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Une enumération de type Color. La liste exhaustive des 24
+couleurs système se trouve sur le site de la documentation
+officielle Microsoft <a class="ulink" href="https://docs.microsoft.com/fr-fr/windows/uwp/controls-and-patterns/xaml-theme-resources#the-xaml-color-ramp-and-theme-dependent-brushes" target="_blank">ici</a>.</p></li>
+<li class="listitem"><p>Une énumération de type SolidColorBrush. La liste de tous ces
+styles se trouve <a class="ulink" href="https://msdn.microsoft.com/fr-fr/library/windows/apps/dn518235.aspx" target="_blank">ici</a>.</p></li>
+<li class="listitem"><p>Une liste de styles prédéfinis pour la typographie, permettant
+d'appliquer entre autres la hiérarchie visuelle de l'image suivante.
+Pour ceux-ci, vous trouverez plus d'explications <a class="ulink" href="https://docs.microsoft.com/fr-fr/windows/uwp/style/typography" target="_blank">ici</a>.</p></li>
+</ul></div>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top">
+<p>Si vous souhaitez découvrir en détail l'implémentation de tous
+les styles et animations, vous trouverez le code XAML utilisé par UWP
+au chemin suivant :</p>
+<p><span class="bold"><strong>C:\Program Files (x86)\Windows
+Kits\10\DesignTime\CommonConfiguration\Neutral\UAP\{Version}\Generic\</strong></span></p>
+<p>Le fichier themeresources.xaml contient l'ensemble des
+ressources, et generic.xaml définit leur implémentation dans les
+différents thèmes de l'application : Default, Light, Dark et
+HighContrast).</p>
+</td></tr>
+</tbody></table></div>
+<p>UWP propose trois thèmes par défaut pour ses applications : Light
+avec des textes noirs sur fond blanc, Dark avec des textes blancs sur
+fond noir, et HighContrast pour les personnes possédant des déficiences
+visuelles.</p>
+<p>Si vous souhaitez créer vos propres styles visuels, il est
+conseillé de décliner ces styles dans les trois thèmes en se basant sur
+les éléments existants dans UWP. Pour ce faire, utilisez l'attribut
+x:Key des balises ResourceDictionary avec l'une des valeurs Light, Dark
+et HighContrast.</p>
+<pre class="programlisting xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span>
+  <span class="hljs-attribute">xmlns</span>=<span class="hljs-value">"http://schemas.microsoft.com/winfx/2006/xaml/presentation"</span> 
+  <span class="hljs-attribute">xmlns:x</span>=<span class="hljs-value">"http://schemas.microsoft.com/winfx/2006/xaml"</span>
+  <span class="hljs-attribute">xmlns:local</span>=<span class="hljs-value">"using:CourseApp"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary.ThemeDictionaries</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span> <span class="hljs-attribute">x:Key</span>=<span class="hljs-value">"Light"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">SolidColorBrush</span> <span class="hljs-attribute">x:Key</span>=<span class="hljs-value">"ArticleTitlePage"</span> <span class="hljs-attribute">Color</span>=<span class="hljs-value">"Red"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span> <span class="hljs-attribute">x:Key</span>=<span class="hljs-value">"Dark"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">SolidColorBrush</span> <span class="hljs-attribute">x:Key</span>=<span class="hljs-value">"ArticleTitlePage"</span> <span class="hljs-attribute">Color</span>=<span class="hljs-value">"Blue"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ResourceDictionary</span> <span class="hljs-attribute">x:Key</span>=<span class="hljs-value">"HighContrast"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">SolidColorBrush</span> <span class="hljs-attribute">x:Key</span>=<span class="hljs-value">"ArticleTitlePage"</span> <span class="hljs-attribute">Color</span>=<span class="hljs-value">"Green"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary.ThemeDictionaries</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">Style</span> <span class="hljs-attribute">x:Name</span>=<span class="hljs-value">"ArticleTitlePage"</span> <span class="hljs-attribute">TargetType</span>=<span class="hljs-value">"TextBlock"</span>&gt;</span><span class="css">
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontSize</span>" <span class="hljs-tag">Value</span>="20" /&gt;
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">FontStyle</span>" <span class="hljs-tag">Value</span>="<span class="hljs-tag">Italic</span>" /&gt;
+    &lt;<span class="hljs-tag">Setter</span> <span class="hljs-tag">Property</span>="<span class="hljs-tag">Foreground</span>" <span class="hljs-tag">Value</span>="<span class="hljs-rules">{StaticResource ArticleTitlePage}</span>" /&gt;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-title">Style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ResourceDictionary</span>&gt;</span></pre>
+<p>Dans cet exemple, les contrôles TextBlock avec l'attribut
+Style="{StaticResource ArticleTitlePage}" possèderont :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Quelque soit le thème : une taille de police de 20 rédigé en
+italique</p></li>
+<li class="listitem"><p>Pour le thème clair, une couleur rouge</p></li>
+<li class="listitem"><p>Pour le thème sombre, une couleur bleue</p></li>
+<li class="listitem"><p>Pour le thème à haut contraste, une couleur verte</p></li>
+</ul></div>
+</div>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702191363600"></a>Bouton Retour</h2></div></div></div>
+<p>Quelque soit le matériel utilisé, un bouton "Retour" est désormais
+utilisable avec UWP, et ceci sans avoir besoin de l'intégrer dans
+l'interface. Ce bouton est placée dans les applications Desktop dans la
+barre de l'application, tandis qu'il est présent dans la version mobile
+soit dans le bandeau rétractable du système, soit comme bouton
+matériel.</p>
+<div class="figure">
+<a name="idm44702191361680"></a><p class="title"><b>Figure&nbsp;1.9.&nbsp;Bouton Back - Application PC en haut, Mobile en bas</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-back-example.png" width="535" alt="Bouton Back - Application PC en haut, Mobile en bas"></div></div>
+</div>
+<br class="figure-break"><p>Ce bouton retour permet de revenir si possible à la vue précédente
+tout en offrant une expérience là-encore unifiée entre toutes les
+applications de l'utilisateur : il n'est pas nécessaire d'implémenter
+soi-même ce système avec un bouton dans la mise en page, l'utilisateur
+sait en permanence s'il est possible de revenir en arrière, et si oui,
+comment.</p>
+<p>Ce bouton n'est pas forcément à implémenter sur toutes les pages.
+Par exemple, la page principale n'aurait que peu d'utilité à en disposer.
+A l'opposé et pour notre application, revenir à la page principale après
+avoir visionné un article fait sens.</p>
+<p>Pour implémenter le bouton Back, il est nécessaire d'ajouter dans le
+code-behind ce bloc de code :</p>
+<pre class="programlisting hljs ruby"><span class="hljs-constant">SystemNavigationManager</span>.<span class="hljs-constant">GetForCurrentView</span>().<span class="hljs-constant">AppViewBackButtonVisibility</span> =
+    <span class="hljs-constant">AppViewBackButtonVisibility</span>.<span class="hljs-constant">Visible</span>; 
+<span class="hljs-regexp">//</span> <span class="hljs-constant">Utilisez</span> la possibilité <span class="hljs-string">"Collapsed"</span> pour cacher le bouton <span class="hljs-string">"Back"</span></pre>
+<p>UWP peut déterminer si l'application peut revenir en arrière ou non,
+de par le chemin qu'a effectué l'utilisateur et la hiérarchie des pages.
+La propriété CanGoBack vous permettra de consolider votre système de
+navigation en offrant ou non la visibilité de ce bouton.</p>
+<pre class="programlisting hljs coffeescript"><span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.Frame.CanGoBack) {
+  SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
+      AppViewBackButtonVisibility.Visible; 
+} <span class="hljs-keyword">else</span> {
+  SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
+      AppViewBackButtonVisibility.Collapsed;
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top"><p>Ce système, bien que simple à mettre en place, peut se révéler
+rapidement très répétitif et fastidieux. Il est cependant possible
+d'implémenter ce comportement pour toutes les pages de l'application, et
+ce sans aucun risque de mauvaise interprétation. Ainsi, pour chaque
+page, s'il est possible de revenir en arrière, alors le choix sera
+offert à l'utilisateur.</p></td></tr>
+</tbody></table></div>
+<p>Pour implémenter le bouton Retour dans toutes les pages de
+l'application, il est nécessaire d'ajouter du code dans le fichier
+App.xaml.cs, fichier code-behind exécuté au lancement de l'application.
+Notre but sera de définir un comportement à chaque navigation vers une
+page, pour déterminer si ce bouton doit apparaître ou non.</p>
+<pre class="programlisting hljs cs"><span class="hljs-comment">// Fichier App.xaml.cs</span>
+<span class="hljs-comment">// Reste du fichier omis</span>
+<span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnLaunched</span>(<span class="hljs-params">LaunchActivatedEventArgs e</span>)
+</span>{
+  <span class="hljs-comment">// Code déjà présent dans le fichier à la création du projet</span>
+  Frame rootFrame = Window.Current.Content <span class="hljs-keyword">as</span> Frame;
+  <span class="hljs-keyword">if</span> (rootFrame == <span class="hljs-keyword">null</span>)
+  {
+    rootFrame = <span class="hljs-keyword">new</span> Frame();
+
+    rootFrame.NavigationFailed += OnNavigationFailed;
+    <span class="hljs-comment">// En dessous du délégué écoutant l'événement NavigationFailed,</span>
+    <span class="hljs-comment">// ajoutons un délégué écoutant l'événement Navigated.</span>
+    rootFrame.Navigated += OnNavigated;
+
+    <span class="hljs-comment">// Suite de la méthode...</span>
+
+    <span class="hljs-comment">// A la fin de la méthode, il faudra ajouter un délégué écoutant l'événement</span>
+    <span class="hljs-comment">// BackRequested pour la vue courante (page principale au lancement de l'application,</span>
+    <span class="hljs-comment">// ou page vue en dernier si l'application sort d'un état suspendu. Pour celle-ci, </span>
+    <span class="hljs-comment">// s'il est possible de revenir en arrière, affichons le bouton Retour.</span>
+    SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;
+    SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
+      rootFrame.CanGoBack ?
+      AppViewBackButtonVisibility.Visible :
+      AppViewBackButtonVisibility.Collapsed;
+}</pre>
+<p>Il ne reste plus qu'à rédiger les deux méthodes OnNavigated et
+OnBackRequested. La première déterminera s'il faut afficher le bouton
+Retour pour la page vers laquelle on naviguera, l'autre pour déterminer le
+comportement à effectuer en cas de clic sur le bouton Retour.</p>
+<pre class="programlisting hljs cs"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnBackRequested</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, BackRequestedEventArgs e</span>)
+</span>{
+  Frame rootFrame = Window.Current.Content <span class="hljs-keyword">as</span> Frame;
+  <span class="hljs-comment">// Vérification supplémentaire, si la page courante peut effectuer le</span>
+  <span class="hljs-comment">// retour arrière, alors on appelle la méthode GoBack en considérant</span>
+  <span class="hljs-comment">// l'événement effectué.</span>
+  <span class="hljs-keyword">if</span> (rootFrame.CanGoBack)
+  {
+    e.Handled = <span class="hljs-keyword">true</span>;
+    rootFrame.GoBack();
+  }
+}
+<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">OnNavigated</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, NavigationEventArgs e</span>)
+</span>{
+  <span class="hljs-comment">// A chaque navigation vers une page, on détermine si la page de destination</span>
+  <span class="hljs-comment">// supporte le retour en arrière, et on met à jour la visibilité du bouton Retour.</span>
+  SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
+    ((Frame)sender).CanGoBack ?
+    AppViewBackButtonVisibility.Visible :
+    AppViewBackButtonVisibility.Collapsed;
+}</pre>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702191349904"></a>Police Segoe MDL2 Assets</h2></div></div></div>
+<p>Cette courte section aura pour but de présenter la police de
+caractères Segoe MDL2 Assets. Cette police un peu spéciale n'est pas
+constituée de lettres ou de chiffres mais d'icônes. En effet, il est
+devenu courant de ne plus utiliser d'images pour les éléments de
+navigation et la signalétique d'un site mais bien une police de caractères
+particulière constituée d'icônes.</p>
+<p>Cette méthode, bien que possible depuis de nombreuses années
+notamment via les polices Webdings et Windings ont connu un nouvel essor
+avec les technologies Web et se retrouvent aujourd'hui extrêmement
+utilisées. On peut citer par exemple <a class="ulink" href="https://design.google.com/icons/" target="_blank">material-icons</a> et
+<a class="ulink" href="http://fontawesome.io/" target="_blank">font-awesome</a>.</p>
+<p>La police Segoe MDL2 Assets est dans la même veine et propose de
+nombreuses icônes. Il est conseillé d'en user pour les applications UWP,
+car elles renforcent l'ergonomie générale de la plateforme. La liste
+complète se trouve à cette adresse : <a class="ulink" href="https://docs.microsoft.com/en-us/windows/uwp/style/segoe-ui-symbol-font" target="_blank">https://docs.microsoft.com/en-us/windows/uwp/style/segoe-ui-symbol-font</a></p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note">
+<tbody><tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/note.png"></td>
+<th align="left"></th>
+</tr>
+<tr><td align="left" valign="top">
+<p>Comme précisé dans cette documentation, il est possible d'utiliser
+une énumération via code-behind. Ainsi, pour accéder au symbole
+AcceptLegacy (E10B), vous pouvez utiliser la syntaxe suivante en XAML
+:</p>
+<pre class="programlisting hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">TextBlock</span> <span class="hljs-attribute">FontFamily</span>=<span class="hljs-value">"Segoe MDL2 Assets"</span> <span class="hljs-attribute">Text</span>=<span class="hljs-value">"&amp;#xE10B;"</span> /&gt;</span></pre>
+<p>Ou la syntaxe suivante en C# :</p>
+<pre class="programlisting hljs bash">TextBlock.Text = <span class="hljs-string">'\xE10B'</span>.ToString();</pre>
+</td></tr>
+</tbody></table></div>
+</div><div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="idm44702173214752"></a>Etape 4 : Présentation des articles</h2></div></div></div>
+<div class="answerkey">
+<h1>Etape 4.2 : Présentation des articles</h1>
+<div class="qandaset">
+<a name="idm44702173213040"></a><table border="0" style="width: 100%;">
+<colgroup>
+<col align="left" width="1%">
+<col>
+</colgroup>
+<tbody>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702173212400"></a><a name="idm44702173212080"></a><p><b>1.1.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Modifiez l'affichage des articles dans la liste.
+Reproduisez l'interface ci-dessous.</p>
+<div class="figure">
+<a name="idm44702173211056"></a><p class="title"><b>Figure&nbsp;1.10.&nbsp;Représentation d'un Article</b></p>
+<div class="figure-contents"><div class="mediaobject"><img src="https://www.supinfo.com/cours/3WIN/chapitres/images/05-article-example.png" width="535" alt="Représentation d&#39;un Article"></div></div>
+</div>
+<br class="figure-break"><p>Attentes techniques :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Une marge de 5 doit être observée autour de l'élément
+de liste (constituant l'ensemble du visuel
+ci-dessus).</p></li>
+<li class="listitem"><p>Le bloc de couleur à gauche est de 60 de haut sur 80
+de large.</p></li>
+<li class="listitem"><p>Le bloc de couleur grise en dessous est de 20 de haut
+sur 80 de large (ces deux éléments mis ensemble créent donc
+un carré de 80 de haut sur 80 de large).</p></li>
+<li class="listitem"><p>L'icône doit être de police "Segoe MDL2 Assets" pour
+rendre l'icône correctement, de taille 24, blanc et centré
+horizontalement et verticalement.</p></li>
+<li class="listitem"><p>Le nom de la catégorie doit être de taille 10, blanc
+et centré horizontalement et verticalement.</p></li>
+<li class="listitem"><p>Le titre de l'article doit être de taille 24.</p></li>
+<li class="listitem"><p>La description de l'article doit pouvoir prendre
+plusieurs lignes (propriété TextWrapping).</p></li>
+<li class="listitem"><p>Utilisez le dictionnaire de ressources pour définir
+vos styles que vous appliquerez ensuite à vos
+éléments.</p></li>
+</ul></div>
+<p>Quelques informations supplémentaires :</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Concernant la zone de gauche : l'icône se trouve en
+propriété Icon d'un objet Group, quand la couleur se trouve
+en propriété Color d'un objet Category.</p></li>
+<li class="listitem"><p>Pour l'alignement vertical des textes en XAML, utile
+pour l'icône comme pour le nom de la catégorie, il est
+conseillé de les englober dans une balise Border de la
+taille du bloc parent, l'alignement vertical n'étant pas
+supporté par tous les contrôles englobant.</p></li>
+</ul></div>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702173190096"></a><a name="idm44702173189776"></a><p><b>1.2.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Ajoutez un titre au dessus de la liste d'articles avec le
+style TitleTextBlockStyle faisant partie de la typographie UWP
+avec pour texte "Articles des étudiants de SUPINFO".</p>
+<p>Pour finir cet exercice, nous allons trier les articles
+par ordre de publication décroissante. Modifiez la requête LINQ
+dans la boucle foreach de MainPage pour récupérer les articles
+dans cet ordre.</p>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702173185280"></a><a name="idm44702173184960"></a><p><b>1.3.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Implémentez le bouton Back dans votre application en
+modifiant le fichier App.xaml.cs comme vu précédemment.</p>
+<p>En utilisant le bouton Back après avoir navigué vers un
+article, vous devriez remarquer que la liste de la page
+principale est vide. En effet, si l'instance de RssReader a bien
+récupéré les articles précédemment, le constructeur a été
+imaginé sans prendre en compte la possibilité que la
+récupération d'articles ait déjà eu lieu. Modifiez le
+constructeur pour prendre ce cas en compte.</p>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+<tr class="question">
+<td align="left" valign="top">
+<a name="idm44702173181808"></a><a name="idm44702173181488"></a><p><b>1.4.</b></p>
+</td>
+<td align="left" valign="top">
+<p>Les publications sur notre site pouvant être dépendants de
+plusieurs catégories, des articles peuvent apparaître plusieurs
+fois dans la liste affichée dans l'application. Pour éviter
+cela, nous allons utiliser la méthode Distinct de LINQ. Celle-ci
+utilisant les méthodes Equals et GetHashCode, implémentez ces
+deux méthodes en considérant l'identité de votre classe comme
+son Id.</p>
+<p>Une fois ces deux méthodes implémentées, utilisez Distinct
+dans la requête de récupération des articles dans
+MainPage.</p>
+</td>
+</tr>
+<tr class="answer"><td colspan="2"><button class="display_answer">Display answer</button></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="clr space"></div>
+</div>
+</span>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td class="tdCopyright" align="left">
+<span id="ctl00_lblCopyright">
+<a href="https://www.supinfo.com/ecole-informatique/" title="A propos de ecole informatique SUPINFO">A propos de SUPINFO</a> |
+<a href="https://www.supinfo.com/fr/contact.aspx">Contacts &amp; adresses</a> |
+<a href="https://www.supinfo.com/enseignant/">Enseigner à SUPINFO</a> |
+<a href="https://www.supinfo.com/presse/">Presse</a> |
+<a href="https://www.supinfo.com/conditions-utilisation-sites-produits-services/">Conditions d'utilisation &amp; Copyright</a> |
+<a href="https://www.supinfo.com/fr/respect_de_la_vie_privee.aspx">Respect de la vie privée</a> |
+<a href="https://www.supinfo.com/fr/investors.aspx">Investir</a>
+</span>
+</td>
+</tr>
+<tr id="ctl00_trPartners">
+<td align="left">
+<span id="ctl00_spnPartner">
+<center>
+<table style="PADDING-TOP: 20px" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/CiscoLogo.jpg" alt="Logo de la société Cisco, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/IbmLogo.jpg" alt="Logo de la société IBM, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/OracleSunLogo.jpg" alt="Logo de la société Sun-Oracle, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/AppleLogo.jpg" alt="Logo de la société Apple, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/SybaseLogo.jpg" alt="Logo de la société Sybase, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/NovellLogo.jpg" alt="Logo de la société Novell, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/IntelLogo.jpg" alt="Logo de la société Intel, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/accentureLogo.jpg" alt="Logo de la société Accenture, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/SAPLogo.jpg" alt="Logo de la société SAP, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/PrometricLogo.jpg" alt="Logo de la société Prometric, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+<td width="190" align="center">
+<font color="black">
+<img border="0" src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/MicrosoftITALogo.jpg" alt="Logo du IT Academy Program par Microsoft, partenaire pédagogique de SUPINFO, la Grande École de l&#39;informatique, du numérique et du management">
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<br>
+<p align="center">
+<span>
+<font color="black" size="1">
+<strong>SUPINFO International University</strong>
+<br> Ecole d'Informatique - IT School
+<br> École Supérieure d'Informatique de Paris, leader en France
+<br> La Grande Ecole de l'informatique, du numérique et du management
+<br> Fondée en 1965, reconnue par l'État. Titre Bac+5 certifié au niveau I.
+<br> SUPINFO International University is globally operated by EDUCINVEST Belgium - Avenue Louise, 534 - 1050 Brussels</font>
+</span>
+</p>
+</span>
+</td>
+</tr>
+</tbody></table>
+</div>
+</form>
+<style type="text/css" rel="stylesheet">
+	  .floating-button {
+	      text-align: center;
+		  vertical-align: middle;
+		  padding: 8px 8px;
+	 	  text-shadow: #4E4E4E 1px 1px 1px;
+		  font: normal normal normal 13px arial;
+		  color: #ffffff;
+		  text-decoration: none;
+		  display: block;
+		  margin-bottom: 3px;
+		  border: 1px solid white;
+		};
+	</style>
+<script src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/highlight.min.js.download"></script>
+<script>
+		var els = document.querySelectorAll("pre.screen");
+		for(var i = 0; i < els.length; i++) { els[i].classList.add("nohighlight",  "hljs"); }
+	</script>
+<script>Array.prototype.slice.apply(document.querySelectorAll('pre.programlisting')).forEach(hljs.highlightBlock);</script>
+<script>
+var answers = document.querySelectorAll(".qandaset .answer"); //"*:not(.answerkey) > .qandaset .answer");
+var answersHTML = [];
+for(var i = 0; i < answers.length; i++) {
+    var answer = answers[i];
+
+	var tocontinue = false;
+	if(answer.querySelector("td > *").textContent.trim() == "") tocontinue = true;
+
+	answersHTML[i] = answer.innerHTML;
+    answer.innerHTML = "";
+	if(tocontinue) continue;
+    var td = document.createElement("td");
+    td.setAttribute("colspan", 2);
+    var button = document.createElement("button");
+    button.textContent = "Display answer";
+    button.classList.add("display_answer");
+    button.addEventListener("click", listener.bind(null, answer, i));
+    td.appendChild(button);
+    answer.appendChild(td);
+}
+
+function listener(answer, index) {
+    if(!answersHTML[index]) return;
+    answer.innerHTML = answersHTML[index];
+    answersHTML[index] = false;
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+}
+    </script>
+
+
+<div id="top-menu-bar" style="display: block;"><div id="top-menu-bar-first"><div class="inner"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/SupInfoLogo.png" class="logo"><div class="sos"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/logo-top-top-sos@x2.png"></div><ul><li><a href="https://www.twitter.com/SUPINFO"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/logo-twitter-topbar@x2.png"> <span>@SUPINFO</span></a></li><li><a href="https://www.supinfo.com/contact/"><img src="./Chapitre 05 - Navigation and Dictionaries _ SUPINFO, École Supérieure d&#39;Informatique_files/icone-contact-topbar@x2.png"><span>Contact</span></a></li></ul></div></div><div id="top-menu-bar-inner"><div id="top-site-nav"><ul><li>
+<a class="linka" href="https://www.supinfo.com/fr/Default.aspx">Accueil</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/Cursus/">Cursus</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/cours/">Cours</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/Admission/">Admissions</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/campus/">Campus</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/brochure/">Documentation</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/anciens/">Anciens</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/entreprise/">Entreprises</a>
+</li><li>
+<a class="linka" href="http://www.campus-booster.net/Booster/v2/" target="_blank">Open Campus</a>
+</li><li>
+<a class="linka" href="https://www.supinfo.com/articles/">Publications</a>
+</li></ul></div><div id="inner-nav"><ul><li>Naviguer sur la page</li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191537936">Introduction</a></span></li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191535472">Navigation au sein d'une application</a></span></li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191450880">Etape 3 : Visualisation des articles</a></span></li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191404288">Dictionnaire de Ressources</a></span></li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191363600">Bouton Retour</a></span></li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702191349904">Police Segoe MDL2 Assets</a></span></li><li><span class="section"><a href="https://www.supinfo.com/cours/3WIN/chapitres/05-navigation-and-dictionaries#idm44702173214752">Etape 4 : Présentation des articles</a></span></li></ul></div></div></div></body></html>

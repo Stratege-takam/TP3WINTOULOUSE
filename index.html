@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .inputText{
+            border: red 2px ;
+            text-align: center;
+            font-size: 3em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="100%">
+        <tr>
+            <td>Nom</td>
+            <td>Prenom</td>
+            <td>Sexe</td>
+        </tr>
+        <tr>
+            <td colspan="2"> TOTO  JEAN</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td> Arthur</td>
+            <td>Testeur</td>
+            <td rowspan="3"> F</td>
+        </tr>
+        <tr>
+            <td>Victor</td>
+            <td>Codeur</td>
+        </tr>
+        <tr>
+            <td>Salim</td>
+            <td>Codeur 1</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <div>
+            <label for="Lastname">Last name</label>
+            <input type="text" class="inputText" name="Lastname" id="Lastname" placeholder="Enter the Lastname" />
+        </div>
+        <div>
+            <label for="Firstname">Last name</label>
+            <input type="text"  class="inputText" name="Firstname" id="Firstname"  placeholder="Enter the Firstname"/>
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" />
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" />
+        </div>
+        <div>
+            <button type="submit">Valide form</button>
+        </div>
+    </form>
+</body>
+</html>
